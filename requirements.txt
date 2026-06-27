@@ -1,0 +1,18 @@
+# Core data analysis
+pandas
+numpy
+openpyxl
+
+# Visualization
+matplotlib
+seaborn
+
+# Jupyter
+jupyter
+
+# Web scraping (for BLS download script)
+requests
+beautifulsoup4
+
+# Econometrics / DiD
+linearmodels

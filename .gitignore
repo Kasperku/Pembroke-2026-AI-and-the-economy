@@ -249,8 +249,6 @@ scripts/storm-the-wall-scraper/output/
 # Raw data formats
 *.dat
 *.xml
-# Crosswalks
-**/crosswalks/
 # LaTeX source
 *.tex
 # Notebooks / scratch
