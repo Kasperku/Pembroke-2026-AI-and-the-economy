@@ -12,9 +12,11 @@ import pandas as pd
 import numpy as np
 from pathlib import Path
 
-DIR   = Path(__file__).parent
-INPUT = DIR / "Data" / "Processed" / "usa_00004_merged.csv"
-OUTPUT = DIR / "Data" / "Processed" / "metro_year_panel.csv"
+DIR    = Path(__file__).parent
+DATA_DIR = Path("C:/Users/user/Desktop/Honours Thesis/Data")
+TEMP_DIR = DATA_DIR / "temp"
+INPUT  = TEMP_DIR / "usa_00004_merged.csv"
+OUTPUT = TEMP_DIR / "metro_year_panel.csv"
 
 # All available years
 YEARS = [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]

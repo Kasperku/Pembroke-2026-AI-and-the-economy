@@ -66,7 +66,8 @@ ctrl_formula <- paste(controls, collapse = " + ")
 # Load base panel (once)
 # ===========================================================================
 SCRIPT_DIR  <- dirname(sys.frame(1)$ofile)
-PANEL_PATH  <- file.path(SCRIPT_DIR, "..", "Data", "Processed", "metro_year_panel.csv")
+TEMP_DIR    <- "C:/Users/user/Desktop/Honours Thesis/Data/temp"
+PANEL_PATH  <- file.path(TEMP_DIR, "metro_year_panel.csv")
 base_panel  <- fread(PANEL_PATH)
 base_panel  <- base_panel[!is.na(ai_exposure)]
 
@@ -172,9 +173,9 @@ run_spec <- function(panel, spec_name, spec_label, outdir) {
 # ===========================================================================
 # Run all selected specs
 # ===========================================================================
-outdir  <- file.path(SCRIPT_DIR, "output")
+outdir  <- file.path(TEMP_DIR, "output")
 logfile <- file.path(outdir, "results.txt")
-dir.create(outdir, showWarnings = FALSE)
+dir.create(outdir, recursive = TRUE, showWarnings = FALSE)
 
 sink(logfile, split = TRUE)
 
