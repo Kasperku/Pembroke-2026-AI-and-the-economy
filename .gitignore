@@ -257,5 +257,6 @@ notebooks/
 
 # Metro panel (superseded by OccPanel 0628) — untracked, kept on disk only
 BuildPanel 0627/
+Data/Raw/hpi_at_metro.csv
 # Generated analysis outputs (figures / tables / sumstats)
 OccPanel 0628/output/
