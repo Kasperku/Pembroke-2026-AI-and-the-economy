@@ -10,8 +10,8 @@ Score assignment:
   - No match                    -> NaN (rows kept but no score)
 
 Input:
-  data/raw/genaiexp_estz_occscores.csv         (this folder)
-  ../../Data/Processed/usa_00004.csv
+  ../../Data/Raw/genaiexp_estz_occscores.csv
+  ../../Data/Processed/usa_00004.csv         (from 00_parse_ipums.py)
   ../../Data/crosswalks/soc_2010_to_2018_crosswalk.xlsx
   ../../Data/crosswalks/2018soc.xlsx
 
@@ -24,8 +24,8 @@ from pathlib import Path
 from collections import defaultdict
 
 ROOT = Path(__file__).parent.parent
-RAW  = ROOT / "data" / "raw"
 DATA = ROOT.parent / "Data"
+RAW  = DATA / "Raw"
 XW   = DATA / "crosswalks"
 OUT  = DATA / "Processed"
 

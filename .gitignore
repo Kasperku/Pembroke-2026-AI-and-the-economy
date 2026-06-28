@@ -254,3 +254,8 @@ scripts/storm-the-wall-scraper/output/
 # Notebooks / scratch
 notebooks/
 .tmp_pip/
+
+# Metro panel (superseded by OccPanel 0628) — untracked, kept on disk only
+BuildPanel 0627/
+# Generated analysis outputs (figures / tables / sumstats)
+OccPanel 0628/output/
